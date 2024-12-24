@@ -1,0 +1,310 @@
+.home {
+    padding-top: 4rem;
+  }
+  
+  .intro {
+    gap: 2rem; 
+    padding: 2rem;
+    align-items: flex-start; 
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  }
+  
+  .who-we-are {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    flex: 1; /* Takes up 1/3 of the available space */
+    padding-left: 15rem;
+    padding-right: 15rem;
+
+  }
+
+  .overview {
+    flex-direction: column;
+  }
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .who-we-are h2 {
+    flex-shrink: 0;
+    color: #af2117;
+    font-size: 2.5rem;
+  }
+
+  .who-we-are h2:hover{
+    color: gold;
+    transition: transform 0.5s ease;
+    text-shadow: 0 0 10px rgba(255, 247, 0, 0.918);
+  }
+  
+  .who-we-are p {
+    font-size: 1.5rem;
+    color: #333;
+    width: 300px;
+    padding: auto;
+    font-weight: 400;
+    /* font-family: 'Times New Roman', Times, serif; */
+  }
+  
+  .features {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    flex: 2; /* Takes up 2/3 of the available space */
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+  
+  .feature .red-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #af2117;
+  }
+  
+  .feature p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #555;
+  }
+
+  .icon-feature{
+    font-size: 1.75rem;
+  }
+
+  .icon-feature:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefits {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 0.5px solid #b9b9b9; */
+    padding-bottom: 3rem;
+  }
+  
+  .benefits h3 {
+    font-size: 3rem;
+    color: #333;
+  }
+
+  .benefits h3 span {
+    color: gold;
+  }
+
+  .benefits h3 span:hover { 
+    color: #af2117;
+    transition: transform 0.5s ease;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  }
+  
+  .properties {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    perspective: 1000px; /*for flip effect */
+  }
+  
+  .property {
+    position: relative;
+    /* background-color: #af2117; */
+    padding: 1rem;
+    border-radius: 50%;
+    color: white;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex; 
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .property:hover {
+    transform: rotateY(180deg);
+    /* background-color: gold;
+    transition: transform 0.6s;
+    color: #333; */
+  }
+
+  .property .front, .property .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.property .front{
+    background-color: #af2117;
+    position: relative;
+}
+
+
+
+.front-text {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* bottom: 20px; */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  z-index: 1;
+}
+
+.property .back {
+    background-color: gold;
+    transform: rotateY(180deg);
+    color: #333;   
+}
+
+.property .back p {
+    /* margin-top: 3rem; */
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .icon {
+    font-size: 5rem;
+    color: gold;
+  }
+  
+  .property .front p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    
+  }
+
+  .tech-edge-section {
+    /* padding: 2rem 0 3rem; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid #b9b9b9;
+    padding-bottom: 3rem;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  .tech-edge-heading {
+    
+    font-size: 4rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #af2117;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .tech-edge-heading:hover {
+    color: gold;
+    transition: transform 0.5s ease;
+    text-shadow: 0 0 10px rgba(255, 247, 0, 0.918);
+  }
+
+  .tech-edge-section p{
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .home{
+      padding-top: 4rem;
+
+    }
+
+    .intro {
+      padding: 1.5rem;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .who-we-are {
+      flex-direction: column;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .who-we-are h2 {
+      font-size: 2rem;
+    }
+  
+    .who-we-are p {
+      font-size: 1.2rem;
+    }
+
+    .features {
+      grid-template-columns: 1fr; 
+      gap: 1.5rem;
+    }
+  
+    .benefits h3 {
+      font-size: 2.5rem;
+    }
+
+    .property {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+  
+    .property .front p
+    {
+      font-size: 1.25rem;
+    }
+
+    .property .back p {
+      font-size: 0.65rem;
+    }
+
+    .properties {
+      flex-direction: row; 
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem; 
+    }
+  
+    .property {
+      width: 180px; 
+      height: 180px;
+      margin: 10px;
+    }
+
+  }
+  

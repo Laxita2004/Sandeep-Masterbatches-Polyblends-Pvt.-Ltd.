@@ -1,0 +1,17 @@
+.view-more {
+    background-color: #af2117;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+  }
+  
+  .view-more:hover {
+    transform: scale(1.1);
+    background-color: gold;
+    color: #333;
+  }
+  

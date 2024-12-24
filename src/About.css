@@ -1,0 +1,241 @@
+.about {
+    margin: 0;
+    padding: 2rem;
+    /* overflow-x: hidden; */
+}
+
+.image-container{
+    margin-top: 6rem;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    filter: brightness(60%);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.about-firm {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.img-container {
+    position: relative;
+    justify-content: flex-start;
+}
+
+.about-firm img{
+    height: 200px;
+    width: 300px;
+    border-radius: 5%;
+    transition: filter 0.3s ease;
+    position: relative;
+}
+
+.about-firm img:hover  {
+    filter: brightness(60%);
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: "Quicksand", sans-serif;
+    z-index: 1;
+    text-align: center;
+}
+
+.img-container:hover .hover-text {
+    opacity: 1;
+}
+
+.about-firm .we-are {
+    color: red;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-firm p{
+    font-family: "Quicksand", sans-serif;
+}
+
+.about-firm .firm-name {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+.about-director {
+    padding: 1rem 2rem;
+    margin: 0;
+    border-bottom: 0.5px solid #6a6868;
+}
+
+.about-director .director-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 1rem; 
+    justify-content: center;
+    margin-top: 0;
+}
+
+.about-director h3{
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0 0 0.5rem 0;
+}
+
+.about-director .img-container{
+    /* display: flex; */
+    /* gap: 1rem; */
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.about-director img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: filter 0.3s ease;
+    /* position: relative; */
+}
+
+.about-director img:hover  {
+    filter: brightness(60%);
+}
+
+.about-director img:hover + .hover-text {
+    opacity: 1;
+}
+
+.about-director p{
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.points {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 0.5px solid #6a6868;
+}
+
+.points .point {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.point .icon-point {
+    font-size: 2rem;
+}
+
+.icon-point:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
+
+.point span{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+.point p{
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        height: auto;
+    }
+
+    .text-overlay {
+        font-size: 2rem; 
+    }
+
+    .about-firm {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .about-firm img {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .about-director {
+        padding: 1rem 2rem;
+        margin: 0 auto; 
+        border-bottom: 0.5px solid #6a6868;
+        text-align: center;
+    }
+
+    .about-director .director-container {
+        flex-direction: column; 
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-director img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .points {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .point {
+        margin-bottom: 1.5rem; 
+    }
+}

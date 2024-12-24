@@ -1,0 +1,102 @@
+.green-zone {
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    color: #333;
+    padding: 2rem;
+    padding-top: 6rem;
+    border-bottom: 0.5px solid #b9b9b9;
+    background-image: url('/public/leaf-bg.png')
+  }
+  
+  .green-zone h1 {
+    background: linear-gradient(45deg, #104210, #196219, #0b950b, #32cd32, #98fb98, #adfead);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+ 
+  transition: all 0.3s ease-in-out;
+  }
+
+  .green-zone .manglam {
+    color: #af2117;
+    text-align: center;
+    font-size: 2rem;
+
+  }
+  
+  
+  .green-zone p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .key-features h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .feature-card {
+    position: relative;
+    width: 100%; /* You can adjust this to fit more/less cards */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(253, 164, 164);
+  }
+  
+  .feature-card img {
+    width: 100%;
+    height: 200px;  /* Adjust based on your desired size */
+    object-fit: fill; /* Ensures the image covers the area */
+  }
+  
+  .feature-text {
+    position: absolute;
+    bottom: 10px;
+    /* left: 10px; */
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* background: rgba(0, 0, 0, 0.5); Darkens the background for text visibility */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+
+
+.feature-card img:hover + .feature-text:hover {
+    transform: scale(1.2);
+    transition: ease 0.3s all;
+    filter: brightness(80%);
+  }
+  
+  @media (max-width: 768px) {
+    /* Center Align Everything */
+    .green-zone {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1rem;
+      padding-top: 6rem;
+    }
+  
+    .green-zone h1 {
+      font-size: 2.2rem; /* Adjust title size */
+    }
+}
+  
